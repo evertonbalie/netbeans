@@ -17,7 +17,7 @@ public class Javaprogressivo {
         // TODO code application logic here
         
         
-        String nome;
+        String nome1;
     }
     
 }
