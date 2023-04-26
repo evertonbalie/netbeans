@@ -4,6 +4,8 @@
  */
 package javaprogressivo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author teste
@@ -28,6 +30,14 @@ public class Char {
                                     letra_J,97,118,97, letra_P, 'r',
                                     111,103,114,101,'s','s',letra_i,
                                     118, 111);
+        
+        //Como armazenar um caractere (char) que o usuário digitou
+        System.out.println("Digite aqui -> ");
+        Scanner entrada = new Scanner(System.in);
+        char caractere;
+
+        caractere = entrada.nextLine().charAt(0);
+        System.out.println("motra caractere digitado:"+caractere);
     }
 }
     
