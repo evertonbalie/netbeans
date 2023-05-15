@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package javaprogressivo;
 
-/**
- *
- * @author teste
- */
 public class soma {
     
     public static void main(String[] args){
@@ -16,7 +9,7 @@ public class soma {
         int b=2;                                        ;
         int k=1;
         int r=1;
-        int c=1;
+        int c=1; 
         
         
         int soma=a+b+c+k+r;  
