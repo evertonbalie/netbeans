@@ -103,7 +103,7 @@ public class Frmcliente extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 204));
 
-        jLabel1.setText("Cadastro de funcinário");
+        jLabel1.setText("Cadastro de clientes");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

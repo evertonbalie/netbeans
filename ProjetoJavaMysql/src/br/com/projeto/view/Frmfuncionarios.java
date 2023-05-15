@@ -147,6 +147,12 @@ public class Frmfuncionarios extends javax.swing.JFrame {
 
         jLabel6.setText("Endereço:");
 
+        txtcodigo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcodigoActionPerformed(evt);
+            }
+        });
+
         try {
             jfcelular.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##) # ####-####")));
         } catch (java.text.ParseException ex) {
@@ -605,12 +611,18 @@ public class Frmfuncionarios extends javax.swing.JFrame {
 
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
 
-        ClientesDAO dao = new ClientesDAO();
+       
 
-        Clientes obj = new Clientes();
+        Funcionarios obj = new Funcionarios();
+        obj.setId(Integer.parseInt(txtcodigo.getText()));
 
-        dao.ExcluirCliente(obj);
-//        obj.setId();
+        FuncionariosDAO dao = new FuncionariosDAO();
+        dao.ExcluirFuncionarios(obj);
+    ///obj.setId();
+    
+    
+    
+    
 
     }//GEN-LAST:event_btExcluirActionPerformed
 
@@ -722,6 +734,10 @@ public class Frmfuncionarios extends javax.swing.JFrame {
 
         }// TODO add your handling code here:
     }//GEN-LAST:event_txtcepKeyPressed
+
+    private void txtcodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcodigoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcodigoActionPerformed
 
     public void formWindowActivated(java.awt.event.WindowEvent evt) {
 

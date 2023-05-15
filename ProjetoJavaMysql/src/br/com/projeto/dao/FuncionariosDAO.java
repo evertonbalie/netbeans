@@ -5,6 +5,7 @@
 package br.com.projeto.dao;
 
 import br.com.projeto.jdbc.ConnectionFactory;
+import br.com.projeto.model.Clientes;
 import br.com.projeto.model.Funcionarios;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -63,6 +64,20 @@ String sql ="insert into tb_funcionarios"
            
            
         
+       }
+   }
+    
+  public void ExcluirFuncionarios(Funcionarios obj){
+       try {
+           String sql= "delete from tb_funcionarios where id=?";
+           PreparedStatement stmt = con.prepareStatement(sql);
+           stmt.setInt(1, obj.getId());
+           stmt.execute();
+           stmt.close();
+           
+           JOptionPane.showMessageDialog(null, "Excluido com sucesso");
+       } catch (Exception e) {
+           JOptionPane.showMessageDialog(null,"Erro de exclusão"+ e);
        }
    }
     
@@ -161,5 +176,4 @@ String sql ="insert into tb_funcionarios"
         }
         
     }
-    
-}
+}      
