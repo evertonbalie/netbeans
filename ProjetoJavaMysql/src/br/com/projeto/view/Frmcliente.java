@@ -516,7 +516,7 @@ public class Frmcliente extends javax.swing.JFrame {
         System.out.println("nome capturado" + nome);
         ClientesDAO dao = new ClientesDAO();
 
-        List<Clientes> lista = dao.PesquisarClientes(nome);
+        List<Clientes> lista = dao.PesquisarClientesPorNome(nome);
 
         DefaultTableModel dados = (DefaultTableModel) tbclientes.getModel();
 

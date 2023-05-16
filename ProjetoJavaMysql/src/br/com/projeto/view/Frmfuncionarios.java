@@ -566,7 +566,7 @@ public class Frmfuncionarios extends javax.swing.JFrame {
         System.out.println("nome capturado" + nome);
        FuncionariosDAO dao = new FuncionariosDAO();
 
-        List<Funcionarios> lista = dao.PesquisarFuncionarios(nome);
+        List<Funcionarios> lista = dao.PesquisarFuncionariosPorNome(nome);
 
         DefaultTableModel dados = (DefaultTableModel) tbfuncionarios.getModel();
 

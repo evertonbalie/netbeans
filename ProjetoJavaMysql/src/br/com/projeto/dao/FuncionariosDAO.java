@@ -131,7 +131,7 @@ String sql ="insert into tb_funcionarios"
     
        }
        
-        public List<Funcionarios> PesquisarFuncionarios(String nome) {
+        public List<Funcionarios> PesquisarFuncionariosPorNome(String nome) {
        
         try {
             List<Funcionarios> pesquisa = new ArrayList<>();

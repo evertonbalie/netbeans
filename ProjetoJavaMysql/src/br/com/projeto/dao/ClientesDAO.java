@@ -104,7 +104,7 @@ String sql ="update tb_clientes set nome=?,rg=?,cpf=?,email=?,telefone=?,celular
    }
    
    
-    public List<Clientes> PesquisarClientes(String nome) {
+    public List<Clientes> PesquisarClientesPorNome(String nome) {
        
         try {
             List<Clientes> pesquisa = new ArrayList<>();
